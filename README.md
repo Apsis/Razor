@@ -8,7 +8,7 @@ Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut
 - Python 3.6.1 or greater
 - A text file containing the uppercase DNA nucleotides of a 5' to 3' DNA strand (the file dnatest.txt provided is an example of this)
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<table>
       <tbody>
        <tr>
         <td width="435" valign="top"><p align="center" class="Title14">Nucleotide ambiguity code</p>
@@ -203,8 +203,8 @@ Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut
              -<br />             
              </center></td>
             </tr>
-           </tbody>
-          </table>
+</tbody>
+</table>
 
 
 # Commands:
