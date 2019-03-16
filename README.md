@@ -7,9 +7,20 @@ Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut
 # Requirements:
 - Python 3.6.1 or greater
 - A text file containing the uppercase DNA nucleotides of a 5' to 3' DNA strand (the file dnatest.txt provided is an example of this)
-
+Base pairs below in left colomn can be used:
 <table>
       <tbody>
+            <tr>
+             <td width="69" valign="top" bgcolor="#000000" class="red"><center class="style2">
+              <b>Code</b>
+             </center></td>
+             <td width="112" valign="top" bgcolor="#000000" class="red"><center class="style1">
+              <span class="red"><b>Represents</b></span>
+             </center></td>
+             <td width="85" valign="top" bgcolor="#000000" class="red"><center class="style1">
+              <b>Complement</b>
+             </center></td>
+            </tr>
             <tr>
              <td bgcolor="#88FF88" valign="top"><center>
              A<br />             
