@@ -1,5 +1,7 @@
 # Razor
-A restriction enzyme explorer for DNA sequence analysis
+- A restriction enzyme explorer for DNA sequence analysis! 
+- Made by Athanasios Bourganos. 
+- Video of episode 1 of this project is here: 
 
 # Introduction:
 Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut restriction enzymes. These restriction enzymes will cut the DNA exacty once (in one spot) and will leave two strands behind (left and right). Once restriction enzyme sites are found, the tool can explore the cuts made by selected enzymes.
@@ -215,6 +217,9 @@ To use the makereport function type: ```python3 main.py --makereport dnatest.py`
 
 ![alt text](https://i.ibb.co/TW58xk2/doc2.png)
 
-which outputs a text file structured as the following with name dnatest_report.txt
+which outputs a text file with the name dnatest_report.txt like this:
 
 ![alt text](https://i.ibb.co/njrtyNn/doc3.png)
+
+# Final Note:
+Thank you for your interest, and happy programming!
