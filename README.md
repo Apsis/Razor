@@ -19,12 +19,12 @@ To use the analyze function type: python3 main.py --analyze dnatest.txt
 To use the cut function type: python3 main.py --cut dnatest.txt <enzyme name copied from analysis list>
 To use the search function type: python3 --search dnatest.py <sequence to search for>
   
-![alt text](https://ibb.co/mBLYY3D)
+![alt text](https://i.ibb.co/vB7rrSw/Doc1.png)
 
 To use the makereport function type: python3 main.py --makereport dnatest.py
 
-![alt text](https://ibb.co/qJws3dj)
+![alt text](https://i.ibb.co/TW58xk2/doc2.png)
 
 which outputs a text file structured as the following with name dnatest_report.txt
 
-![alt text](https://ibb.co/GR7ND4t)
+![alt text](https://i.ibb.co/njrtyNn/doc3.png)
