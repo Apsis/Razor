@@ -10,23 +10,6 @@ Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut
 
 <table>
       <tbody>
-       <tr>
-        <td width="435" valign="top"><p align="center" class="Title14">Nucleotide ambiguity code</p>
-          <p align="center" class="DevilsContract">(as defined in DNA Sequence Assembler)</p>
-          <p align="center" class="DevilsContract">&nbsp;</p>
-          <table align="center" border="1" cellpadding="2" cellspacing="1">
-           <tbody>
-            <tr>
-             <td width="69" valign="top" bgcolor="#000000" class="red"><center class="style2">
-              <b>Code</b>
-             </center></td>
-             <td width="112" valign="top" bgcolor="#000000" class="red"><center class="style1">
-              <span class="red"><b>Represents</b></span>
-             </center></td>
-             <td width="85" valign="top" bgcolor="#000000" class="red"><center class="style1">
-              <b>Complement</b>
-             </center></td>
-         </tr>
             <tr>
              <td bgcolor="#88FF88" valign="top"><center>
              A<br />             
