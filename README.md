@@ -8,171 +8,204 @@ Razor is a tool that quickly scans a DNA nucleotide sequence looking for one-cut
 - Python 3.6.1 or greater
 - A text file containing the uppercase DNA nucleotides of a 5' to 3' DNA strand (the file dnatest.txt provided is an example of this)
 
-<table>
-<tbody><tr>
-<th>Symbol<sup id="cite_ref-iupac_2-0" class="reference"><a href="#cite_note-iupac-2">&#91;2&#93;</a></sup></th>
-<th>Description</th>
-<th colspan="5">Bases represented</th>
-<th>Complement
-</th></tr>
-<tr>
-<td><b>A</b></td>
-<td align="left"><a href="/wiki/Adenine" title="Adenine"><b>A</b>denine</a></td>
-<td>A</td>
-<td></td>
-<td></td>
-<td></td>
-<td rowspan="5">1</td>
-<td>T
-</td></tr>
-<tr>
-<td><b>C</b></td>
-<td align="left"><a href="/wiki/Cytosine" title="Cytosine"><b>C</b>ytosine</a></td>
-<td></td>
-<td>C</td>
-<td></td>
-<td></td>
-<td>G
-</td></tr>
-<tr>
-<td><b>G</b></td>
-<td align="left"><a href="/wiki/Guanine" title="Guanine"><b>G</b>uanine</a></td>
-<td></td>
-<td></td>
-<td>G</td>
-<td></td>
-<td>C
-</td></tr>
-<tr>
-<td><b>T</b></td>
-<td align="left"><a href="/wiki/Thymine" title="Thymine"><b>T</b>hymine</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td>T</td>
-<td>A
-</td></tr>
-<tr>
-<td><b>U</b></td>
-<td align="left"><a href="/wiki/Uracil" title="Uracil"><b>U</b>racil</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td>U</td>
-<td>A
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>W</b></td>
-<td align="left"><b>W</b>eak</td>
-<td>A</td>
-<td></td>
-<td></td>
-<td>T</td>
-<td rowspan="6">2</td>
-<td>W
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>S</b></td>
-<td align="left"><b>S</b>trong</td>
-<td></td>
-<td>C</td>
-<td>G</td>
-<td></td>
-<td>S
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>M</b></td>
-<td align="left"><a href="/wiki/Amine" title="Amine">a<b>M</b>ino</a></td>
-<td>A</td>
-<td>C</td>
-<td></td>
-<td></td>
-<td>K
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>K</b></td>
-<td align="left"><a href="/wiki/Ketone" title="Ketone"><b>K</b>eto</a></td>
-<td></td>
-<td></td>
-<td>G</td>
-<td>T</td>
-<td>M
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>R</b></td>
-<td align="left"><a href="/wiki/Purine" title="Purine">pu<b>R</b>ine</a></td>
-<td>A</td>
-<td></td>
-<td>G</td>
-<td></td>
-<td>Y
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>Y</b></td>
-<td align="left"><a href="/wiki/Pyrimidine" title="Pyrimidine">p<b>Y</b>rimidine</a></td>
-<td></td>
-<td>C</td>
-<td></td>
-<td>T</td>
-<td>R
-</td></tr>
-<tr>
-<td><b>B</b></td>
-<td align="left">not A (<b>B</b> comes after A)</td>
-<td></td>
-<td>C</td>
-<td>G</td>
-<td>T</td>
-<td rowspan="4">3</td>
-<td>V
-</td></tr>
-<tr>
-<td><b>D</b></td>
-<td align="left">not C (<b>D</b> comes after C)</td>
-<td>A</td>
-<td></td>
-<td>G</td>
-<td>T</td>
-<td>H
-</td></tr>
-<tr>
-<td><b>H</b></td>
-<td align="left">not G (<b>H</b> comes after G)</td>
-<td>A</td>
-<td>C</td>
-<td></td>
-<td>T</td>
-<td>D
-</td></tr>
-<tr>
-<td><b>V</b></td>
-<td align="left">not T (<b>V</b> comes after T and U)</td>
-<td>A</td>
-<td>C</td>
-<td>G</td>
-<td></td>
-<td>B
-</td></tr>
-<tr bgcolor="#e8e8e8">
-<td><b>N</b></td>
-<td align="left">any <b>N</b>ucleotide (not a gap)</td>
-<td>A</td>
-<td>C</td>
-<td>G</td>
-<td>T</td>
-<td>4</td>
-<td>N
-</td></tr>
-<tr>
-<td><b>Z</b></td>
-<td align="left"><a href="/wiki/0" title="0"><b>Z</b>ero</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>0</td>
-<td>Z
-</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+       <tr>
+        <td width="435" valign="top"><p align="center" class="Title14">Nucleotide ambiguity code</p>
+          <p align="center" class="DevilsContract">(as defined in DNA Sequence Assembler)</p>
+          <p align="center" class="DevilsContract">&nbsp;</p>
+          <table align="center" border="1" cellpadding="2" cellspacing="1">
+           <tbody>
+            <tr>
+             <td width="69" valign="top" bgcolor="#000000" class="red"><center class="style2">
+              <b>Code</b>
+             </center></td>
+             <td width="112" valign="top" bgcolor="#000000" class="red"><center class="style1">
+              <span class="red"><b>Represents</b></span>
+             </center></td>
+             <td width="85" valign="top" bgcolor="#000000" class="red"><center class="style1">
+              <b>Complement</b>
+             </center></td>
+         </tr>
+            <tr>
+             <td bgcolor="#88FF88" valign="top"><center>
+             A<br />             
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             Adenine
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             T<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#88FF88" valign="top"><center>
+             G<br />             
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             Guanine
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             C<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#88FF88" valign="top"><center>
+             C<br />             
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             Cytosine
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             G<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#88FF88" valign="top"><center>
+             T<br />             
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             Thymine
+             </center></td>
+             <td bgcolor="#88FF88" valign="top"><center>
+             A<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             Y<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              Pyrimidine (C or T)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             R<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             R<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              Purine (A or G)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             Y<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             W<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              weak (A or T)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             W<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             S<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              strong (G or C)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             S<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             K<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              keto (T or G)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             M<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             M<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+              amino (C or A)<br />             
+             </center></td>
+             <td bgcolor="#FFFF99" valign="top"><center>
+             K<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             D<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             A, G, T (not C)<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             H<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             V<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             A, C, G (not T)<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             B<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             H<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             A, C, T (not G)<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             D<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             B<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             C, G, T (not A)<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             V<br />             
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             X/N
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             any base 
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             X/N
+             </center></td>
+            </tr>
+            <tr>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             -<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             Gap<br />             
+             </center></td>
+             <td bgcolor="#FFBA75" valign="top"><center>
+             -<br />             
+             </center></td>
+            </tr>
+           </tbody>
+          </table>
+
 
 # Commands:
 We are using python 3 so each command begins with 'python3'. This may be 'python' or 'python3' on your system but hopeully you will be able to figure this out! After CDing into the directory where these project files are:
