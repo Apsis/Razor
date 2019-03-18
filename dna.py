@@ -98,13 +98,13 @@ class NucleotideSequence:
                 if base.upper() in 'ACGTYRWSKMDVHBXN-':
                     self.nucleotides += base.upper()
                 else:
-                    self.nucleotides += base.upper()
+                    self.nucleotides += '-'
         elif type(sequence) is list:
             for base in sequence:
                 if base.upper() in 'ACGTYRWSKMDVHBXN-':
                     self.nucleotides += base.upper()
                 else:
-                    self.nucleotides += base.upper()
+                    self.nucleotides += '-'
 
         if complement is None:
             self.complement = self.make_complement()
